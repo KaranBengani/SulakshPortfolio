@@ -18,7 +18,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     display: flex;
@@ -57,6 +57,8 @@ h3 {
 .about-me {
     text-align: center;
     font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .gallery-solo {
@@ -66,11 +68,17 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .solo-img {
     width: 280px;
     padding: 10px;
+}
+
+.skill-text {
+    margin: 10px 20px;
 }
 
 .langs-gallery {
@@ -79,6 +87,8 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .card {
@@ -114,4 +124,49 @@ h3 {
 
 .card-body .made-a-cal {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 990px){
+    .mid-title-span {
+        font-size: 4.5rem;
+        border-bottom: #e94560 2px solid;
+        margin-left: 30px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        border-bottom: #e94560 2px solid;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        margin: 10px auto;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-me {
+        font-size: 1.5rem;
+    }
+    
+
+    .gallery-solo{
+        max-width: 90%;
+    }
+
+    .solo-img {
+        width: 40%;
+    }
+
+    .skill-text {
+        text-align: center;
+        margin: 10px 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin-right: 10px;
+    }
 }
